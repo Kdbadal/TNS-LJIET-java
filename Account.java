@@ -4,6 +4,7 @@
 	    private double Balance;
 
 	    public Account(int accountNumber, double balance) {
+	   
 	        this.AccountNumber = accountNumber;
 	        this.Balance = balance;
 	    }
@@ -13,7 +14,9 @@
 	    }
 
 	    public void withdraw(double amount) {
-	        if (Balance - amount >= 2000) {
+	        if (Balance - amount >= 2000)
+	        
+	        {
 	            Balance= Balance - amount;
 	            System.out.println("Withdrawal successful. Current balance: " + Balance);
 	        } else {
